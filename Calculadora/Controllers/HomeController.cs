@@ -30,6 +30,16 @@ namespace Calculadora.Controllers
             return View();
         }
 
+        /// <summary>
+        /// View em modo POST
+        /// </summary>
+        /// <param name="visor">Mostra o valor do visor</param>
+        /// <param name="bt">Identifica o valor da tecla clicada</param>
+        /// <param name="operando">Guarda o valor do operando para operação</param>
+        /// <param name="operador">Guarda o operador a usar na operação</param>
+        /// <param name="limparVisor">Identifica se o visor deve ser ou não limpo</param>
+        /// <returns></returns>
+
         [HttpPost]
         public IActionResult Index(string visor, string bt, string operando, string operador, bool limparVisor)
         {
